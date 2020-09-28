@@ -89,7 +89,7 @@ buttonStart.addEventListener('click', () => {
 
 
 
-
+/* START of QUESTION 1 */
     const answerOne = prompt(`Hey ${userName}! Does Lavinia get married?`);
 
         /*console*/console.log(answerOne);
@@ -109,20 +109,17 @@ buttonStart.addEventListener('click', () => {
         /*console*/console.log('no points');
 
             }
-                
+/* END of QUESTION 1*/                
 
 
-
-
-
-        const answerTwo = prompt(`Hey ${userName}! Is the new found city is called Lantuma?`);
+/* START of QUESTION 2*/
+        const answerTwo = prompt(`Hey ${userName}! Is the new found city called Lantuma?`);
 
         /*console*/console.log(answerTwo);
         /*console*/console.log(quizScore);
 
         const judgeTwo = countsAsYes(answerTwo);
     
-        /*console*/console.log(answerOne);
         /*console*/console.log(answerTwo);
         /*console*/console.log(quizScore);
     
@@ -132,22 +129,19 @@ buttonStart.addEventListener('click', () => {
         /*console*/console.log(quizScore + ' another point!');
     
             } else {
-        /*console*/console.log('no points');
 
             }
+/* END of QUESTION 2*/
 
 
-
-
-   const answerThree = prompt(`Hey ${userName}! Does Lavinia turn into a cat?`);
+/* START of QUESTION 3*/
+const answerThree = prompt(`Hey ${userName}! Does Lavinia turn into a cat?`);
 
     /*console*/console.log(answerThree);
     /*console*/console.log(quizScore);
 
     const judgeThree = countsAsYes(answerThree);
     
-    /*console*/console.log(answerOne);
-    /*console*/console.log(answerTwo);
     /*console*/console.log(answerThree);
     /*console*/console.log(quizScore);
         
@@ -157,15 +151,22 @@ buttonStart.addEventListener('click', () => {
     /*console*/console.log(quizScore + ' another point!');
 
         } else {
-    /*console*/console.log('no points');
         
         }
+/* END of QUESTION 3*/
     
-    spanResults.textContent = `Hey ${userName}, you correctly answered ${quizScore} out of 3.`;
 
+    if (quizScore === 3) {
+        spanResults.textContent = `Great job, ${userName}! You correctly answered all ${quizScore} out of 3!!`;
+    } else if (quizScore === 2) {
+        spanResults.textContent = `Good job, ${userName}! You correctly answered ${quizScore} out of 3!`;
+    } else if (quizScore === 1) {
+        spanResults.textContent = `Good try, ${userName}! You correctly answered ${quizScore} out of 3.`;
+    } else {
+        spanResults.textContent = `Better luck next time, ${userName}! You answered ${quizScore} out of 3.`;
+    }
 
-
-
+    quizScore = 0;
 
     } else {
         return;
