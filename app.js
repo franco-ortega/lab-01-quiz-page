@@ -90,7 +90,7 @@ buttonStart.addEventListener('click', () => {
 
 
 
-    const answerOne = prompt(`Hey ${userName}! Is the answer YES or NO?`);
+    const answerOne = prompt(`Hey ${userName}! Does Lavinia get married?`);
 
         /*console*/console.log(answerOne);
         /*console*/console.log(quizScore);
@@ -115,7 +115,7 @@ buttonStart.addEventListener('click', () => {
 
 
 
-        const answerTwo = prompt(`Hey ${userName}! Is this answer NO or YES?`);
+        const answerTwo = prompt(`Hey ${userName}! Is the new found city is called Lantuma?`);
 
         /*console*/console.log(answerTwo);
         /*console*/console.log(quizScore);
@@ -139,7 +139,7 @@ buttonStart.addEventListener('click', () => {
 
 
 
-   const answerThree = prompt(`Hey ${userName}! Is this answer NO or YES?`);
+   const answerThree = prompt(`Hey ${userName}! Does Lavinia turn into a cat?`);
 
     /*console*/console.log(answerThree);
     /*console*/console.log(quizScore);
@@ -151,7 +151,7 @@ buttonStart.addEventListener('click', () => {
     /*console*/console.log(answerThree);
     /*console*/console.log(quizScore);
         
-        if (judgeThree === true) {
+        if (judgeThree === false) {
         quizScore++;
         
     /*console*/console.log(quizScore + ' another point!');
@@ -161,7 +161,7 @@ buttonStart.addEventListener('click', () => {
         
         }
     
-    spanResults.textContent = `You got ${quizScore} out of 3.`;
+    spanResults.textContent = `Hey ${userName}, you correctly answered ${quizScore} out of 3.`;
 
 
 
