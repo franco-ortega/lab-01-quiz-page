@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+
+/* CSS HSL */
+--tea-green: hsla(74, 70%, 82%, 1);
+--flax: hsla(53, 62%, 71%, 1);
+--gold-fusion: hsla(38, 25%, 41%, 1);
+
+    background-color: var(--tea-green);
+
+}
+
+header {
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.25em;
+    text-align: center;
+    border: 2px solid purple;
+}
+
+.spoiler {
+    animation: blink .85s linear infinite;
+}
+
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.book-cover {
+    display: flex;
+    justify-content: center;
+    border: teal 2px solid;
+}
+
+.main-section {
+    font-family: fantasy;
+    font-size: 1.25em;
+    width: 800px;
+    border: yellow 2px solid;
+}
+
+.cover-image {
+    height: 200px;
+    width: auto;
+}
+
+
+.add-info {
+    font-family: 'Old Standard TT', serif;
+    border: 2px solid green;
+}
+
+li {
+    font-family: 'Old Standard TT', serif;
+    border: 2px solid yellow;
+}
+
+ul {
+    border: 2px solid black;
+}
+
+ol {
+    border: 2px solid purple;
+}
+
+button {
+    font-family: fantasy;
+    font-size: 1em;
+    background-color: var(--flax;
+    color: var(--gold-fusion));
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35px;
+    width: auto;
+    border: 2px solid gold;
+
+}
