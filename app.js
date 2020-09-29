@@ -163,7 +163,7 @@ const answerThree = prompt(`Hey ${userName}! Does Lavinia turn into a cat?`);
     } else if (quizScore === 1) {
         spanResults.textContent = `Good try, ${userName}! You correctly answered ${quizScore} out of 3.`;
     } else {
-        spanResults.textContent = `Better luck next time, ${userName}! You answered ${quizScore} out of 3.`;
+        spanResults.textContent = `Better luck next time, ${userName}. You answered ${quizScore} out of 3.`;
     }
 
     quizScore = 0;
