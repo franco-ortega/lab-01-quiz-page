@@ -8,6 +8,7 @@ body {
     --flax: hsla(53, 62%, 71%, 1);
     --gold-fusion: hsla(38, 25%, 41%, 1);
     background-color: var(--tea-green);
+    color: var(--gold-fusion);
 }
 
 header {

@@ -1,6 +1,11 @@
 import { countsAsYes } from './count-as-yes.js'
 
-let quizScore = 0
+let quizScore = 0;
+let threeCorrect = Math.floor(3 / 3 * 100);
+let twoCorrect = Math.floor(2 / 3 * 100);
+let oneCorrect = Math.floor(1 / 3 * 100);
+let zeroCorrect = Math.floor(0 / 3 * 100);
+
 
 const spanResults = document.getElementById('span-results');
 const buttonStart = document.getElementById('button-start');
@@ -37,17 +42,17 @@ buttonStart.addEventListener('click', () => {
                 quizScore++;
         }
 
-        alert(`You have completed the quiz, ${userName}! Click OK to see your results`);
+        alert(`You have completed the quiz, ${userName}! Click OK to see your results.`);
     
 /* QUIZ SCORE */
     if (quizScore === 3) {
-        spanResults.textContent = `Great job, ${userName}! You correctly answered all ${quizScore} out of 3!!`;
+        spanResults.textContent = `Congratulations, ${userName}! You correctly answered all ${quizScore} out of 3 for ${threeCorrect}%!!`;
     } else if (quizScore === 2) {
-        spanResults.textContent = `Good job, ${userName}! You correctly answered ${quizScore} out of 3!`;
+        spanResults.textContent = `Good job, ${userName}! You correctly answered ${quizScore} out of 3 for ${twoCorrect}%!`;
     } else if (quizScore === 1) {
-        spanResults.textContent = `Good try, ${userName}! You correctly answered ${quizScore} out of 3.`;
+        spanResults.textContent = `Good try, ${userName}. You correctly answered ${quizScore} out of 3 for ${oneCorrect}%.`;
     } else {
-        spanResults.textContent = `Better luck next time, ${userName}. You answered ${quizScore} out of 3.`;
+        spanResults.textContent = `You correctly answered ${quizScore} out of 3 for ${zeroCorrect}%. Better luck next time, ${userName}.`;
     }
 
     quizScore = 0;
