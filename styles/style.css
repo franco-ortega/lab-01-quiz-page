@@ -1,4 +1,4 @@
-/*
+
 body {
     --color1: #ffffff;
     --color2: #ffffff;
@@ -121,11 +121,5 @@ footer {
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-
-  }
-
-  */
-
-  main {
 
   }

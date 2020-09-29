@@ -47,25 +47,18 @@ RESULTS
 
 */
 
-export function countsAsYes(reply) {
-    if (reply.charAt(0).toUpperCase() === 'Y') {
-/*console*/console.log('they said yes!');
-        return true;
-    } else {
-/*console*/console.log('they said no');
-        return false;
-    }
-}
+import { countsAsYes } from './count-as-yes.js'
+
 
 let quizScore = 0
 
-        /*console*/console.log(quizScore);
+        /*console.log(quizScore);*/
 
 const spanResults = document.getElementById('span-results');
 
 const buttonStart = document.getElementById('button-start');
 
-        /*console*/console.log(buttonStart);
+        /*console.log(buttonStart);*/
 
 
 
