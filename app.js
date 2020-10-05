@@ -56,7 +56,6 @@ buttonStart.addEventListener('click', () => {
     }
 
     quizScore = 0;
-
     } 
 });
 
